@@ -1,15 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <Button/>
+  <router-link to="/about">about</router-link>
+  <router-link to="/">index</router-link>
+  <router-view></router-view>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script lang="ts">
+import Button from "./components/Button.vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Button
+  },
+  setup() {
   }
 }
 </script>
